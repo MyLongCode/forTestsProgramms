@@ -2,7 +2,7 @@
   <div  class="form1">
     <p id = "registerForm">Register Form</p>
       <form v-show="step===1" class="register">
-      <div>
+      <div> 
         <input type="text" v-model="firstName" name="firstName" placeholder="FirstName:"/>
       </div>
       <div>
