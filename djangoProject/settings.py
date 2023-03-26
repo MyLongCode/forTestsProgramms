@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,11 +79,11 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'databaseName',
-        'USER': 'databaseUser',
-        'PASSWORD': 'databasePassword',
+        'NAME': 'maindb',
+        'USER': 'root',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
-        'PORT': 'portNumber',
+        'PORT': '3306',
     }
 }
 
